@@ -1,4 +1,5 @@
 import LocationCard from "./LocationCard";
+import InfoAttribution from "./InfoAttribution";
 import Map from "../Map";
 import Spinner from "../Spinner";
 
@@ -18,6 +19,7 @@ const CountryDataView = ({ title, data, errorMessage, mapTitle }) => {
             ))
           }
         </ul>
+        <InfoAttribution data={data} />
         <Spinner enabled={!error && !general && !reception} />
         {error && <p>{errorMessage}</p>}
       </div>

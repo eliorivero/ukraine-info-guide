@@ -1,4 +1,7 @@
 {
+  "Data retrieved from <1>{{name}}</1> at {{time}}": "",
+  "Data retrieved from <1>{{name}}</1>": "",
+  "Data retrieved at {{time}}": "",
   "Map": "",
   "Login": "",
   "Logout": "",
