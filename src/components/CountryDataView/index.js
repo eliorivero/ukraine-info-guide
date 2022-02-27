@@ -2,7 +2,7 @@ import LocationCard from "./LocationCard";
 import Map from "../Map";
 import Spinner from "../Spinner";
 
-const CountryDataView = ({ title, data, errorMessage }) => {
+const CountryDataView = ({ title, data, errorMessage, mapTitle }) => {
   const { error, general, reception } = data;
 
   return (
@@ -23,6 +23,7 @@ const CountryDataView = ({ title, data, errorMessage }) => {
       </div>
       {!error && reception &&
         <>
+          {mapTitle && <p className="font-semibold mt-10 mb-3 uppercase">{mapTitle}</p>}
           <Map markers={reception} />
           <div className="flex flex-wrap items-center justify-center">
             {reception.map((item, index) => (

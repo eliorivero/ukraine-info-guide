@@ -40,6 +40,7 @@ const BorderInformationPage = () => {
             { to_country: t(toName) }
           )}
           errorMessage={t("Sorry! We don't have information about this border at the moment")}
+          mapTitle={t("Border Crossing Points")}
           data={data}
         />
       )}
